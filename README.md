@@ -1,3 +1,6 @@
+Here's the complete `README.md` content in markdown format, properly formatted:
+
+```markdown
 # Cryptix Token (CRX)
 
 Cryptix (CRX) is an ERC20 token with enhanced functionalities including minting, burning, transfer fees, token locking, and pausing. It is built using OpenZeppelin libraries and implements additional features to manage transfer fees and ownership control.
@@ -59,46 +62,47 @@ Create a `.env` file in the root directory of your project and add your private 
 ```env
 PRIVATE_KEY=<your_private_key>
 RPC_URL=<your_rpc_url>
+```
 
 ### Step 2: Deploy Using Foundry
 
 To deploy the contract, run the following command:
-
-\```bash
+```bash
 forge script script/DeployCryptix.s.sol:DeployCryptix --rpc-url $RPC_URL --private-key $PRIVATE_KEY --broadcast
-\```
+```
 
-Parameters explained:
-- \`script/DeployCryptix.s.sol\`: Script file for deploying the Cryptix contract
-- \`--rpc-url\`: URL of the network you are deploying to (e.g., Sepolia, Polygon, Mainnet)
-- \`--private-key\`: Your wallet's private key for deployment
+Parameters:
+- `script/DeployCryptix.s.sol`: Script file for deploying the Cryptix contract.
+- `--rpc-url`: URL of the network you are deploying to (e.g., Sepolia, Polygon, Mainnet).
+- `--private-key`: Your wallet's private key for deployment.
 
 ## Testing the Contract
 
 To run tests:
-
-\```bash
+```bash
 forge test
-\```
+```
 
-Make sure to write your unit tests in the \`test/\` directory. Foundry will automatically detect and run them.
+Make sure to write your unit tests in the `test/` directory. Foundry will automatically detect and run them.
 
 ## Forking the Project
 
 To fork this project and test it locally:
 
 1. Clone the repository:
-   \```bash
+   ```bash
    git clone https://github.com/Nandeesh-D/Cryptix-CRX-Token.git
    cd Cryptix-CRX-Token
-   \```
+   ```
 
 2. Install dependencies:
-   \```bash
+   ```bash
    forge install
-   \```
+   ```
 
 3. Run the project on a fork:
-   \```bash
+   ```bash
    forge test --fork-url $RPC_URL
-   \```
+   ```
+```
+
