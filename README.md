@@ -1,6 +1,4 @@
-Here's the complete `README.md` content in markdown format, properly formatted:
 
-```markdown
 # Cryptix Token (CRX)
 
 Cryptix (CRX) is an ERC20 token with enhanced functionalities including minting, burning, transfer fees, token locking, and pausing. It is built using OpenZeppelin libraries and implements additional features to manage transfer fees and ownership control.
@@ -104,5 +102,5 @@ To fork this project and test it locally:
    ```bash
    forge test --fork-url $RPC_URL
    ```
-```
+
 
