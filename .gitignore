@@ -1,14 +1,37 @@
-# Compiler files
-cache/
+# Ignore Foundry artifacts and cache
 out/
+lib/
+cache/
+foundry.toml.lock
 
-# Ignores development broadcast logs
-!/broadcast
-/broadcast/*/31337/
-/broadcast/**/dry-run/
-
-# Docs
-docs/
-
-# Dotenv file
+# Ignore environment variables file
 .env
+
+# Ignore build files and other temporary files
+*.log
+*.tmp
+*.pid
+*.swp
+*.swo
+.DS_Store
+
+# Ignore node_modules if using npm for additional dependencies
+node_modules/
+
+# Ignore VSCode settings (optional)
+.vscode/
+
+# Ignore compiled contracts and temporary files
+*.abi.json
+*.dbg.json
+*.sol.json
+
+# Ignore coverage reports
+coverage/
+coverage.json
+
+# Ignore yarn lock files (if using yarn)
+yarn.lock
+
+# Ignore Truffle's artifact files (if integrating with Truffle)
+build/
